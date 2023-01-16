@@ -23,7 +23,7 @@ Standard license
 
 ## Mock-Up
 
-(./Assets/06-server-side-apis-homework-demo.png)
+[!(./Assets/06-server-side-apis-homework-demo.png)]
 
 ## live Pages
 
