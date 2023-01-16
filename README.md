@@ -15,7 +15,7 @@ n/a
 
 ## Usage
 
-weather app designed to display the weather based ona five day forecast.
+weather app designed to display the weather based on a five day forecast.
 
 ## License
 
@@ -23,9 +23,9 @@ Standard license
 
 ## Mock-Up
 
-![image](/weatherapp/Assets/06-server-side-apis-homework-demo.png)
+![image](/Assets/06-server-side-apis-homework-demo.png)
 
 ## live Pages
 
 https://github.com/Adzy89/weatherapp
-![image](/Assets/03-javascript-homework-demo.png)
+
