@@ -23,8 +23,9 @@ Standard license
 
 ## Mock-Up
 
-!weatherapp [(/weatherapp/Assets/06-server-side-apis-homework-demo.png)]
+![image](/weatherapp/Assets/06-server-side-apis-homework-demo.png)
 
 ## live Pages
 
 https://github.com/Adzy89/weatherapp
+![image](/Assets/03-javascript-homework-demo.png)
