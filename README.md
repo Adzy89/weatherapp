@@ -23,7 +23,7 @@ Standard license
 
 ## Mock-Up
 
-[!weatherapp](weatherapp\Assets\06-server-side-apis-homework-demo.png)
+[[!weatherapp](/weatherapp/Assets/06-server-side-apis-homework-demo.png)]
 
 ## live Pages
 
