@@ -22,29 +22,32 @@ function search(town) {
 }
 
 
-async function fetchlongLat(town) {
-    try {
-    const response = await fetch("api.openweathermap.org/data/2.5/forecast?q="+town+" &appid" + APIkey);
-    const data = await response.json();
-    const lat = data.city.coord.lat;
-    const lon = data.city.coord.lon;
-    const cityName = data.city.name;
-    fetchWeather(lat, lon, cityName);
-    } catch (error) {
-        console.error(error);
-    }
+function fetchlongLat(town) {
+  var link5day = 'https://api.openweathermap.org/data/2.5/forecast?q='+town+'&cnt=6&appid='+APIkey+'&units=imperial';
+  fetch(link5day)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {   
+    var lat = data.city.coord.lat;
+    var lon = data.city.coord.lon; 
+    searchedCity= data.city.name;
+    fetchWeather(lat,lon) ;
+    });
 }
 
-async function fetchWeather(lat, lon, APIkey) {
+
+async function fetchWeather(lat,lon, town) {
     try {
-      const weatherCall = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely,alerts&appid=${APIkey}&units=imperial`;
-      const response = await fetch(weatherCall);
+      const weatherCall = 'https://api.openweathermap.org/data/2.5/weather?q=' + town + '&units=imperial&appid=' + APIkey;
+      const response = await fetch(weatherCall)
       const data = await response.json();
       currentWeather(data);
       fiveDayWeather(data);
     } catch (error) {
       console.error(error);
     }
+    fetchWeather(lat,lon,cityName)
   }
   
   function currentWeather(data) {
